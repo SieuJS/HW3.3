@@ -72,7 +72,7 @@ BEGIN
         STRSQL:= 'GRANT '
                  ||STRROLE
                  ||' TO '
-                 ||USR ;
+                 ||USR || ' WITH ADMIN OPTION' ;
         EXECUTE IMMEDIATE (STRSQL);
     END LOOP;
 
