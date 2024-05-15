@@ -42,7 +42,6 @@ BEGIN
 END;
 /
 
--- TAO ROLE RL_KHACH HANGGCN
 CREATE OR REPLACE PROCEDURE USP_ADDUSRMEM (
     STRROLE VARCHAR,
     LOAI VARCHAR
@@ -73,7 +72,7 @@ BEGIN
         STRSQL:= 'GRANT '
                  ||STRROLE
                  ||' TO '
-                 ||USR;
+                 ||USR ;
         EXECUTE IMMEDIATE (STRSQL);
     END LOOP;
 
